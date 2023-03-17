@@ -1,0 +1,177 @@
+Task:
+Create a text adventure game that puts the player in an escape room. The player must solve puzzles and clues in order to escape the room before time runs out.
+Starting Room- Introduction and rules; how to progress and win
+Each individual room will have a puzzle of some kind for the player to solve. They will collect an item upon successfully completing the puzzle
+
+Title: The Escape Artist
+Story dialogue
+“You are an explorer searching for lost treasure and have been led to an abandoned museum. You enter the museum and close the door behind you when suddenly the ceiling collapses and blocks the entrance. Unfazed by this, you continue to move forward and explore the exhibits in search of the final clue that will lead you to the lost treasure. You now find yourself in a room consisting of three paths...
+Path of Riddles: This path will require creative and lateral thinking, as the solution may not be immediately obvious or straightforward
+Path of Trivia: This path will contain a collection of miscellaneous facts and details, often obscure or of little importance, that are interesting or entertaining to know
+Path of Mini-Games: This path challenges you to beat the computer at its own game. This path may involve elements of skill, strategy, luck, or a combination of all three.
+Which will you choose
+
+>>{Player inputs path}
+___________________________________________________________________
+Old Kingdom Exhibit: “The door closes behind you as you enter a room filled with question marks. A ghost of a lost explorer is blocking the way to the next room”
+
+“The door closes behind you as you enter a room filled with question marks. A ghost is blocking the way to the next room. Would you like to look around, interact with the ghost, or go back?
+>> Type talk to interact with NPC or look to look around the room
+If interact:
+[Ghost: I once was an explorer, looking for treasures unknown,
+Who got lost in this maze, my fate all my own.
+Trapped in this labyrinth, now a ghostly guide
+A puzzling place where time coincides
+Now I guard these secrets with my soul,
+And won't let you pass without a toll.
+Solve the riddle and pass you shall,
+But should you fail, your journey ends here, with no avail.]
+“The ghost explains that it was once an explorer searching for lost treasure when it became trapped inside this labyrinth. Now the ghost safeguards the secrets hidden within this maze and will not let you pass until you answer a riddle.”
+“Would you like to attempt this riddle or turn back?”
+>>{Yes --> Player gets 3 tries to answer riddle plus a hint
+No --> Player exits interaction and can look around room or go back}
+Easy Riddle: “What has a head and a tail, but no body?”
+Answer: Coin
+Hint: Type of minted currency
+If answered wrong: Would you like to try again, or go back?
+If correct: “The ghost disappears and drops a key in front of you. The path to the next room is now clear. Pick up the key to proceed if you have no fear.
+Would you like to pick up the key, look around, or go back?
+>> {Yes or No to go back}
+______________________________________________________________________
+Middle Kingdom Exhibit:
+Welcome to the Middle Kingdom Exhibit. Would you like to look around, interact, or go back to the previous room?
+If interact -->[Ancient symbols line the walls, Mysteries of history it enthralls. An armed guard with weapon raised, Only the worthy shall be praised. The key to pass from him you’ll find, Answer the riddle, claim it as thine. Prove thy worth to enter within, Unlock the secrets, let knowledge begin. Yet if defeat befalls thy way, Exit the hall, for here thou can't stay.]
+“Would you like to accept the guard’s challenge, look around, or go back to the previous room?”
+>>{Yes --> Player gets 3 tries to answer riddle plus a hint
+No/go back --> Player goes back to starting room}
+Medium Riddle: “What begins with T, ends with T, and has T in it?
+Answer: A teapot.”
+Hint: “Used to hold a popular breakfast drink
+If answered wrong: Would you like to try again, or go back?
+If answered correctly: The armed guard drops his weapon and disintegrates into dust. If you wish to proceed, take what he left behind, you must.
+Would you like to look around or go back to the previous room?
+>> {Yes or No look around, Go to go back to the previous room}
+_____________________________________________________________________
+
+New Kingdom Exhibit:
+Welcome to the [  ] Exhibit. Would you like to look around, interact, or go back to the previous room?
+If interact --> ["You've entered a room with a puzzle to solve, A riddle to crack, a mystery to evolve. The riddle is tough, it'll test your mind, So take your time and unwind. Think hard, think fast, and think with care. Win this round and you’re nearly there. But if you fail, and your mind is unclear, you’re destined to repeat your time here]
+Would you like to solve the riddle, look around, or go back to the previous room?
+Hard Riddle: "What walks on four legs in the morning, two legs in the afternoon, and three legs in the evening?"
+Answer: Man || Person || Woman
+Hint: Think in stages
+If incorrect --> Would you like to try again, or go back?
+If correct --> Congratulations, you've proven your wit, The answer you gave was a perfect fit. A key to unlock the path ahead, A reward for the knowledge you've bred.
+Would you like to look around or go back to the previous room?
+
+>> {Yes or No to go back}
+______________________________________________________________________
+
+Dark Ages Exhibit:
+Welcome to the [  ] Exhibit. Would you like to look around, interact, or go back to the previous room?
+If interact --> Listen well and heed my call, For only one can stand tall.
+A challenge of wit, true and sound, A prize that's yours if the answer is found.
+A step towards victory, the reward for success, It will help you on your journey, no less.
+But if you fail and answer wrong, Your journey here will be long.
+Would you like to play or go back?
+Geography:
+1. Which country is both a continent and a country? a. Australia b. Antarctica c. Africa d. Asia
+Answer: a. Australia
+If incorrect --> Would you like to try again, or go back?
+If correct -->
+Would you like to look around or go back to the previous room?
+_____________________________________________________________________
+
+Middle Ages Exhibit:
+Programming Trivia room: You enter the room and see a sword stuck in a stone in the middle of the room. You hear a voice.. “Knowledge is power. Only those able to pass the test are deemed worthy and can pull the sword from the stone”
+["In the chamber, behold a sight, A sword in stone, impervious might. A voice doth say, 'knowledge is key, Only those worthy may set it free.' To pass the test and gain the power, Choose the correct answer, in this very hour. But heed this warning, lest you forget, Failure to pass will bring great regret. The sword shall remain in its stony keep, And you shall leave with naught but defeat. "]
+Would you like to take the test? .. Answered: You answered correctly without using a hint, you have obtained an enhanced longsword.. otherwise: You used hints to help answer correctly, you have obtained a longsword
+What is the name of the process that converts a high-level programming language into machine code?
+A: compilation.
+If incorrect --> Would you like to try again, or go back?
+If correct -->
+______________________________________________________________________
+Renaissance Exhibit:
+["You've entered the room and there stands the chainmail, A prized possession, so strong and hale. A trivia challenge, we offer thee, To win the chainmail vest for free. Answer right and wear it proud, With honor, courage, and battle-cry loud. But answer wrong to the question, And you will lose this prized possession."]
+Would you like to accept the challenge or go back?
+Military:
+2. Which is not the name of a US Army's basic training installation? a. Fort Benning b. Fort Knox c. Fort Leonardwood d. Fort Jackson
+Answer: d. Fort Knox
+
+Koto Exhibit: You enter the room and see a mythological floating hand blocking the door. Would you like to challenge The Hand to a game of rock paper scissors or go back? Best 2 out of 3 wins.
+["In the room you find a strange sight,
+A mythic hand, floating with might.
+It blocks your way, a challenge set,
+A game of rock-paper-scissors, to be met.
+Two out of three is all it takes,
+To prove your worth, and leave the stakes.
+So choose your moves, and choose them well,
+Or turn away and bid, farewell.]
+If incorrect --> Would you like to try again, or go back?
+If correct -->
+______________________________________________________________________
+Shinto Exhibit:
+TTT Game: You enter the room and see a Samurai warrior blocking the door. He challenges you to a game of tic tac toe.
+["Before you stands a warrior brave, A samurai with a Katana to save. He challenges you to a game of skill, Tic tac toe, to test your will. To accept his challenge or turn away, It's up to you, if you choose to play. But if you choose to face this test, You'll need to play at your very best.  If you triumph and the game is won, The katana is yours, your victory done. But if you fail and lose the match, The katana remains out of your catch."]
+Do you want to accept the challenge or do you want to go back?
+If incorrect --> Would you like to try again, or go back?
+If correct -->
+______________________________________________________________________
+Gendai Exhibit:
+["You enter the space and find a sight, All askew, a topsy-turvy blight. The ceiling holds the door, the floor the window pane, Pictures are reversed, and nothing's quite the same. To restore order, unscramble the word, And all will finally be undisturbed." ]
+Would you like to accept the challenge or do you want to go back?
+User is presented with a word that is scrambled
+If solved with no hints --> enhanced Yoroi armor
+If solved with hint --> Yoroi armor
+Else --> try again or go back to previous room
+If incorrect --> Would you like to try again, or go back?
+If correct -->
+______________________________________________________________________
+Before Boss room:
+Modern Egypt Exhibit: “I speak with a voice that has no tongue I see with eyes that have no sight I hear with ears that have no hearing I am a riddle that has no answer, until solved by might What am I?”
+Modern Age: “You hear the roar of a terrible creature and can make out a shadowy figure with wings and sharp claws. Only a knight in shining armor would be a worthy adversary”
+Modern Japan Exhibit: Beware, traveler, for you have come to the realm of the dead A place where the living fear to tread This path leads to the master of the underworld. Prepare your soul and sharpen your blade to battle with the lord of the shade.
+
+“Which items would you like to equip from your inventory?”
+“Which door will you choose?”
+
+Boss Room:
+If Sphynx “A fearsome creature appears before you. It has the body of a lion, but the head of a human. It calls itself a sphynx, a mythical creature from ancient Egyptian mythology, and it says it has one final test for you. Before you can speak, the mighty Sphynx darts towards you with its sharp claws”
+“What will you do?”
+>>attack (equipped weapon)
+>>heal (use equipped potion to restore hp)
+Damage dealt to player calculated based on armor
+End Battle:
+If won --> “You have defeated the mighty Sphynx and have become a master in riddles. Suddenly the Sphynx’s mutates into the body of a sphynx cat and it purrs by your side. Would you like this new friend to join you on your journey?”
+>>If Yes, add to inventory
+“There seems to be small crevice in the ceiling and you have found some rope left behind by another. Would you like to use this rope to climb through the crevice or continue exploring the labyrinth?”
+
+If Dragon: “You step into a massive room filled with gold and treasures beyond your wildest imagination. Nearby you can spot what appear to be the charred remains of previous explorers, with their hands clutching treasure. Before you can examine the treasure a black serpent like creature emerges from underneath a massive pile of gold. It has massive wings, scales running along the entire length of its body, and a red glow emanating from its mouth. While holding a gold relic, you slowly realize the fate that befell the previous explorers who happened upon this serpent. Your only choice now is to slay the beast”
+“What will you do?”
+>>attack (equipped weapon)
+>>heal (use equipped potion to restore hp)
+Damage dealt to player calculated based on armor
+End Battle:
+If won --> “You have defeated the fire breathing Dragon and have avenged the deaths of your fellow explorers. You examine the body of the beast and find a gold amulet with a depiction of a powerful knight. Would you like to remove this item and add to your inventory?
+>> If Yes add to inventory
+There seems to be small crevice in the ceiling and you have found some rope left behind by another. Would you like to use this rope to climb through the crevice or continue exploring the labyrinth?”
+
+If Shinigami: “As you enter the dark room you notice there is a chill in the air. Then, out of the darkness, you see a figure materialize - a tall, skeletal being with glowing red eyes and a long, flowing robe. The mysterious being approaches you slowly, silently, almost as if it is studying you. You might feel a sense of dread wash over you as you realize the true nature of this creature. The creature extends its long, bony finger towards your direction and you start to feel weak as if your life force is being drained. You realize this is a Shinigami, or Death God, and that you must act now or you will be in the afterlife. ”
+“What will you do?”
+>>attack (equipped weapon)
+>>heal (use equipped potion to restore hp)
+Damage dealt to player calculated based on armor
+End Battle:
+If won --> “You have defeated the cunning Shinigami, God of Death, and will live to see another day. You examine a book left behind by the creature, and it has an ominous aura to it. Realizing your close encounter with death, will you take this book with you?
+>>If Yes add to inventory
+There seems to be small crevice in the ceiling and you have found some rope left behind by another. Would you like to use this rope to climb through the crevice or continue exploring the labyrinth?”
+
+{
+“intro”: {
+"story”: “You are an explorer searching for lost treasure and have been led to an abandoned museum. You enter the museum and close the door behind you when suddenly the ceiling collapses and blocks the entrance. Unfazed by this, you continue to move forward and explore the exhibits in search of the final clue that will lead you to the lost treasure. You now find yourself in a room consisting of three paths...
+Path of Riddles: This path will require creative and lateral thinking, as the solution may not be immediately obvious or straightforward
+Path of Trivia: This path will contain a collection of miscellaneous facts and details, often obscure or of little importance, that are interesting or entertaining to know
+Path of Mini-Games: This path challenges you to beat the computer at its own game. This path may involve elements of skill, strategy, luck, or a combination of all three.”
+
+}
+}

@@ -6,17 +6,22 @@ import com.google.gson.JsonObject;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Scanner;
+import com.escapeartist.models.TextParser;
 
 public class GameController {
+
     private JsonObject gameData;
+    private TextParser textParser;
 
     public GameController() {
         loadGameData();
+        textParser = new TextParser(gameData);
     }
 
     private void loadGameData() {
         Gson gson = new Gson();
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("game_dialogue.json");
+        InputStream inputStream = getClass().getClassLoader()
+            .getResourceAsStream("game_dialogue.json");
         gameData = gson.fromJson(new InputStreamReader(inputStream), JsonObject.class);
     }
 
@@ -26,55 +31,28 @@ public class GameController {
 
         while (running) {
             System.out.print(gameData.get("command_prompt").getAsString());
-            String userInput = scanner.nextLine().trim().toLowerCase();
-            JsonElement inputElement = new Gson().toJsonTree(userInput);
+            String userInput = scanner.nextLine();
+            String cleanedInput = textParser.cleanUserInput(userInput);
+            JsonElement inputElement = new Gson().toJsonTree(cleanedInput);
 
-            JsonObject validInputs = gameData.getAsJsonObject("valid_inputs");
-
-            if (validInputs.getAsJsonArray("quit").contains(inputElement)) {
-                boolean confirmQuit = getConfirmation(gameData.get("quit_confirm").getAsString());
+            if (textParser.isQuitCommand(inputElement)) {
+                boolean confirmQuit = textParser.getConfirmation(
+                    gameData.get("quit_confirm").getAsString());
 
                 if (confirmQuit) {
                     System.out.println(gameData.get("goodbye_message").getAsString());
                     running = false;
                 }
+            } else if (textParser.isHelpCommand(inputElement)) {
+                System.out.println(gameData.get("help_menu").getAsString());
+
             } else {
-                if (!isValidInput(validInputs, inputElement)) {
+                if (!textParser.isValidInput(inputElement)) {
                     System.out.println(gameData.get("invalid_input").getAsString());
                 }
 
-                // TODO: 3/16/23   Add game logic here
-            }
-            scanner = new Scanner(System.in);
-        }
-    }
-
-    private boolean getConfirmation(String prompt) {
-        Scanner scanner = new Scanner(System.in);
-        JsonObject validInputs = gameData.getAsJsonObject("valid_inputs");
-
-        while (true) {
-            System.out.println(prompt);
-            System.out.print(gameData.get("command_prompt").getAsString());
-            String userInput = scanner.nextLine().trim().toLowerCase();
-            JsonElement inputElement = new Gson().toJsonTree(userInput);
-
-            if (validInputs.getAsJsonArray("yes").contains(inputElement)) {
-                return true;
-            } else if (validInputs.getAsJsonArray("no").contains(inputElement)) {
-                return false;
-            } else {
-                System.out.println(gameData.get("invalid_input").getAsString());
+                // TODO: Add game logic here
             }
         }
-    }
-
-    private boolean isValidInput(JsonObject validInputs, JsonElement inputElement) {
-        for (String key : validInputs.keySet()) {
-            if (validInputs.getAsJsonArray(key).contains(inputElement)) {
-                return true;
-            }
-        }
-        return false;
     }
 }

@@ -17,7 +17,6 @@ import java.util.Scanner;
 public class MainView {
   private JsonObject menuData;
   private JsonObject basicGameInfo;
-  int delay = 1500;
 
   public MainView() {
     loadMenuData();
@@ -47,7 +46,6 @@ public class MainView {
     toContinue();
     System.out.println(basicGameInfo.get("outcome").getAsString());
     toContinue();
-
   }
 
 

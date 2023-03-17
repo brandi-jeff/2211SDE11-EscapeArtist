@@ -2,11 +2,22 @@
   "quit_confirm": "Are you sure you want to quit? (yes/no)",
   "goodbye_message": "Thanks for playing! Goodbye!",
   "command_prompt": "What would you like to do? \n> ",
-  "invalid_input": "Invalid command. Please try again.",
+  "invalid_input": "Invalid command. Please try again.\nType help for more information.",
   "valid_inputs": {
     "yes": ["yes", "y"],
     "no": ["no", "n"],
-    "quit": ["quit", "exit"]
+    "quit": ["quit", "exit"],
+    "help": ["help", "h", "?"]
+  },
+  "words_to_remove": [
+    "the",
+    "of",
+    "a",
+    "to",
+    "and",
+    "an"
+    ],
+  "help_menu": "Acceptable commands\n'go': used to move to another location\n'get': used to pickup an item\n'talk: allows you to interact\n'look': allows you to look around a room\n'use': allows you to use the items in you inventory\n'quit':  allows you to exit the game\n'new': allows you to start a new game\n'help': brings you to this menu\nAcceptable directions to use with 'go' and 'look':\n'north'\n'east'\n'south'\n'west'"
   }
-}
+
 

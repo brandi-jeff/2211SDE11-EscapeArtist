@@ -1,0 +1,237 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "name": "Museum Lobby",
+      "description": "The lobby of the museum.\n The main entrance is blocked by debris.\n There are three exits (North, East, and West)",
+      "exits": {
+        "west": 2,
+        "north": 3,
+        "east": 4
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 2,
+      "name": "Old Kingdom Exhibit",
+      "description": "You are in the Old Kingdom Exhibit.\nThere are three exits (North, East, and South).",
+      "exits": {
+        "south": 1,
+        "east": 3,
+        "north": 5
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 3,
+      "name": "Dark Ages Exhibit",
+      "description": "You are in the Dark Ages Exhibit.\nThere are four exits (North, East, South, and West).",
+      "exits": {
+        "south": 1,
+        "north": 5,
+        "west": 2,
+        "east": 4
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 4,
+      "name": "Koto Exhibit",
+      "description": "You are in the Koto Exhibit.\nThere are three exits (North, South, and West).",
+      "exits": {
+        "south": 1,
+        "north": 5,
+        "west": 3
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 5,
+      "name": "CrossRoads",
+      "description": "You are at a crossroads.\nThere are four hallways (North, East, South, and West).",
+      "exits": {
+        "north": 6,
+        "west": 2,
+        "east": 4,
+        "south": 3
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 6,
+      "name": "Homeopathy Exhibit",
+      "description": "You are in the Homeopathy Exhibit.\nThere are four exits (North, East, South, and West).",
+      "exits": {
+        "south": 5,
+        "west": 7,
+        "north": 8,
+        "east": 9
+
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 7,
+      "name": "Middle Kingdom Exhibit",
+      "description": "You are in the Middle Kingdom Exhibit.\nThere are three exits (North, East, and South).",
+      "exits": {
+        "south": 6,
+        "north": 10,
+        "east": 8
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 8,
+      "name": "Middle Ages Exhibit",
+      "description": "You are in the Middle Ages Exhibit.\nThere are four exits (North, East, South, and West).",
+      "exits": {
+        "west": 7,
+        "north": 10,
+        "east": 9,
+        "south": 6
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 9,
+      "name": "Shinto Exhibit",
+      "description": "You are in the Shinto Exhibit.\nThere are three exits (North, South, and West).",
+      "exits": {
+        "west": 8,
+        "north": 10,
+        "south": 6
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 10,
+      "name": "Crossroads",
+      "description": "You are at a crossroads.\nThere are four hallways (North, East, South, and West).",
+      "exits": {
+        "west": 7,
+        "north": 11,
+        "south": 8,
+        "east": 9
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 11,
+      "name": "Weapons Exhibit",
+      "description": "You are in the Weapons Exhibit.\nThere are four exits (North, East, South, and West).",
+      "exits": {
+        "west": 12,
+        "north": 13,
+        "south": 10,
+        "east": 14
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 12,
+      "name": "New Kingdom Exhibit",
+      "description": "You are in the New Kingdom Exhibit.\nThere are three exits (North, East, and South).",
+      "exits": {
+        "south": 11,
+        "north": 15,
+        "east": 13
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 13,
+      "name": "Renaissance Ages Exhibit",
+      "description": "You are in the Renaissance Ages Exhibit.\nThere are four exits (North, East, South, and West).",
+      "exits": {
+        "north": 15,
+        "west": 12,
+        "south": 11,
+        "east": 14
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 14,
+      "name": "Gender Exhibit",
+      "description": "You are in the Gender Exhibit.\nThere are three exits (North, South, and West).",
+      "exits": {
+        "west": 13,
+        "north": 15,
+        "south": 11
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 15,
+      "name": "Armor Exhibit",
+      "description": "You are in the Armor Exhibit.\nThere are three exits (East, South, and West).\nTo the North there are three doorways. (Door 1, Door 2, and Door 3)",
+      "exits": {
+        "path 1": 16,
+        "path 2": 17,
+        "path 3": 18,
+        "west": 12,
+        "south": 13,
+        "east": 14
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 16,
+      "name": "Modern Egypt Exhibit",
+      "description": "You are in the Modern Egypt Exhibit.\nThere are two exits (North and South).",
+      "exits": {
+        "north": 19,
+        "south": 15
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 17,
+      "name": "Modern Ages Exhibit",
+      "description": "You are in the Modern Ages Exhibit.\nThere are two exits (North and South).",
+      "exits": {
+        "north": 19,
+        "south": 15
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 18,
+      "name": "Modern Japan Exhibit",
+      "description": "You are in the Modern Japan Exhibit.\nThere are two exits (North and South).",
+      "exits": {
+        "north": 19,
+        "south": 15
+      },
+      "npcs": [],
+      "items": []
+    },
+    {
+      "id": 19,
+      "name": "Escaped",
+      "description": "Congratulations! You have escaped the museum.",
+      "exits": {
+      },
+      "npcs": [],
+      "items": []
+    }
+  ]
+}
