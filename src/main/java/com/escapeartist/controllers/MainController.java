@@ -1,6 +1,10 @@
 package com.escapeartist.controllers;
 
+import com.escapeartist.models.*;
+import com.escapeartist.util.GsonDeserializer;
 import com.escapeartist.views.MainView;
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 
 public class MainController {
     // Hold an instance of MainView
@@ -10,8 +14,19 @@ public class MainController {
     // Constructor initializes the MainView instance
     public MainController() {
         mainView = new MainView();
-        gameController = new GameController();
+
+        // Deserialize game data
+        GsonDeserializer deserializer = new GsonDeserializer();
+        JsonObject gameData = new JsonObject();
+        gameData.add("dialogue", new Gson().toJsonTree(deserializer.deserializeGameDialogue()));
+        gameData.add("locations", new Gson().toJsonTree(deserializer.deserializeLocations()));
+        gameData.add("items", new Gson().toJsonTree(deserializer.deserializeItems()));
+        gameData.add("npcs", new Gson().toJsonTree(deserializer.deserializeNPCs()));
+
+        // Initialize game controller with game data
+        gameController = new GameController(gameData);
     }
+
 
     // Start the game loop, prompting the user for input until a valid input is provided
     public void startMenu() {

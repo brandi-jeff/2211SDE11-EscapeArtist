@@ -1,5 +1,6 @@
 package com.escapeartist.views;
 
+import com.escapeartist.util.Clear;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -41,11 +42,14 @@ public class MainView {
   public void showGameInfo() {
     System.out.println(basicGameInfo.get("story").getAsString());
     toContinue();
+    Clear.clearConsole();
     formatExplanation();
     System.out.println(basicGameInfo.get("objective").getAsString());
     toContinue();
+    Clear.clearConsole();
     System.out.println(basicGameInfo.get("outcome").getAsString());
     toContinue();
+    Clear.clearConsole();
   }
 
 

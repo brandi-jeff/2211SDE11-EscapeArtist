@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Museum Lobby",
-      "description": "The lobby of the museum.\n The main entrance is blocked by debris.\n There are three exits (North, East, and West)",
+      "description": "The lobby of the museum.\nThe main entrance is blocked by debris.\nThere are three exits (North, East, and West)",
       "exits": {
         "west": 2,
         "north": 3,
@@ -21,8 +21,10 @@
         "east": 3,
         "north": 5
       },
-      "npcs": [],
-      "items": []
+      "npcs": [{
+        "name": "Ghost"}],
+      "items": [{
+        "name":"Key"}]
     },
     {
       "id": 3,
@@ -35,7 +37,8 @@
         "east": 4
       },
       "npcs": [],
-      "items": []
+      "items": [{
+        "name":"Key"}]
     },
     {
       "id": 4,
@@ -47,7 +50,8 @@
         "west": 3
       },
       "npcs": [],
-      "items": []
+      "items": [{
+        "name": "Key"}]
     },
     {
       "id": 5,
@@ -85,8 +89,10 @@
         "north": 10,
         "east": 8
       },
-      "npcs": [],
-      "items": []
+      "npcs": [{
+        "name": "Guard"}],
+      "items": [{
+        "name": "Key"}]
     },
     {
       "id": 8,
@@ -98,8 +104,10 @@
         "east": 9,
         "south": 6
       },
-      "npcs": [],
-      "items": []
+      "npcs": [{
+        "name": "Knight"}],
+      "items": [{
+        "name":"Key"}]
     },
     {
       "id": 9,
@@ -110,8 +118,10 @@
         "north": 10,
         "south": 6
       },
-      "npcs": [],
-      "items": []
+      "npcs": [{
+        "name": "Samurai"}],
+      "items": [{
+        "name":"Key"}]
     },
     {
       "id": 10,
@@ -149,7 +159,8 @@
         "east": 13
       },
       "npcs": [],
-      "items": []
+      "items": [{
+        "name":"Key"}]
     },
     {
       "id": 13,
@@ -162,11 +173,12 @@
         "east": 14
       },
       "npcs": [],
-      "items": []
+      "items": [{
+        "name":"Key"}]
     },
     {
       "id": 14,
-      "name": "Gender Exhibit",
+      "name": "Gendaito Exhibit",
       "description": "You are in the Gender Exhibit.\nThere are three exits (North, South, and West).",
       "exits": {
         "west": 13,
@@ -174,21 +186,23 @@
         "south": 11
       },
       "npcs": [],
-      "items": []
+      "items": [{
+        "name": "Key"}]
     },
     {
       "id": 15,
       "name": "Armor Exhibit",
       "description": "You are in the Armor Exhibit.\nThere are three exits (East, South, and West).\nTo the North there are three doorways. (Door 1, Door 2, and Door 3)",
       "exits": {
-        "path 1": 16,
-        "path 2": 17,
-        "path 3": 18,
+        "1": 16,
+        "2": 17,
+        "3": 18,
         "west": 12,
         "south": 13,
         "east": 14
       },
-      "npcs": [],
+      "npcs": [{
+        "name": "Merchant"}],
       "items": []
     },
     {

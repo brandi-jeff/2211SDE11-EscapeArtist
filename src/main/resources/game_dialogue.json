@@ -3,11 +3,36 @@
   "goodbye_message": "Thanks for playing! Goodbye!",
   "command_prompt": "What would you like to do? \n> ",
   "invalid_input": "Invalid command. Please try again.\nType help for more information.",
+  "invalid_exit": "There is no exit in that direction.",
+  "current_location": "Current location: ",
+  "exits_text": "Exits: ",
+  "items_text": "Items: ",
+  "items_dropped": "Item not found.\n",
+  "npcs_text": "NPCs: ",
+  "player_status_start": "----Player Status----",
+  "player_status_end": "---------------------",
+  "player_status_hp": "Current HP: ",
+  "player_status_attack": "Attack: ",
+  "player_status_defense": "Defense: ",
+  "player_status_inventory": "Inventory: ",
+  "player_status_weapon_equipped": "Equipped weapon: ",
+  "player_status_weapon_not_equipped": "No weapon equipped.",
+  "player_status_armor_equipped": "Equipped armor: ",
+  "player_status_armor_not_equipped": "No armor equipped.",
+  "player_picked_up_item" : "Item has been added to your inventory",
+  "player_moved_location" : "You are now in: ",
   "valid_inputs": {
     "yes": ["yes", "y"],
     "no": ["no", "n"],
-    "quit": ["quit", "exit"],
-    "help": ["help", "h", "?"]
+    "quit": ["quit", "exit", "q"],
+    "help": ["help", "h", "?"],
+    "get":  ["get", "take", "grab", "pickup"],
+    "talk" : ["talk", "speak", "chat", "interact"],
+    "go" : ["go", "move"],
+    "look" : ["look", "inspect", "view"],
+    "use" : ["use", "consume"],
+    "equip" : ["equip", "arm"],
+    "drop": ["drop", "discard"]
   },
   "words_to_remove": [
     "the",
@@ -16,8 +41,8 @@
     "to",
     "and",
     "an"
-    ],
-  "help_menu": "Acceptable commands\n'go': used to move to another location\n'get': used to pickup an item\n'talk: allows you to interact\n'look': allows you to look around a room\n'use': allows you to use the items in you inventory\n'quit':  allows you to exit the game\n'new': allows you to start a new game\n'help': brings you to this menu\nAcceptable directions to use with 'go' and 'look':\n'north'\n'east'\n'south'\n'west'"
-  }
+  ],
+  "help_menu": "Acceptable commands\n'go': used to move to another location\n'get': used to pickup an item\n'talk: allows you to interact\n'look': allows you to look around a room\n'use': allows you to use the items in your inventory\n'drop': allows you to drop an item from your inventory\n'equip': allows you to equip yourself with the equipment in your inventory\n'quit':  allows you to exit the game\n'new': allows you to start a new game\n'help': brings you to this menu\nAcceptable directions to use with 'go':\n'north'\n'east'\n'south'\n'west'"
+}
 
 

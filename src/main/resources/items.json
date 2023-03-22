@@ -1,0 +1,60 @@
+{
+  "item": [
+    {
+      "id": 1,
+      "name": "Key",
+      "description": "A key. Maybe I can use it to unlock something.",
+      "type": "item",
+      "equippable": false
+    },
+    {
+      "id": 2,
+      "name": "Potion",
+      "description": "A healing potion is a potion that can be healed by a player.",
+      "type": "item",
+      "equippable": false
+    },
+    {
+      "id": 3,
+      "name": "Scimitar",
+      "description": "A sword with a curved blade.",
+      "type": "weapon",
+      "equippable": true
+    },
+    {
+      "id": 4,
+      "name": "Longsword",
+      "description": "A blade with long reach",
+      "type": "weapon",
+      "equippable": true
+    },
+    {
+      "id": 5,
+      "name": "Katana",
+      "description": "A weapon specialized in mid-range combat and are capable of inflicting slash and thrust",
+      "type": "weapon",
+      "equippable": true
+    },
+    {
+      "id": 6,
+      "name": "Jazerant",
+      "description": "A medieval light coat of armour consisting of mail between layers of fabric or leather.",
+      "type": "armor",
+      "equippable": true
+    },
+    {
+      "id": 7,
+      "name": "Chainmail",
+      "description": "A armor consisting of small metal rings linked together in a pattern to form a mesh",
+      "type": "armor",
+      "equippable": true
+    },
+    {
+      "id": 8,
+      "name": "Yoroi",
+      "description": "Armor made of small pieces of lacquered metal that were connected with silk laces and cords",
+      "type": "armor",
+      "equippable": true
+    }
+  ]
+}
