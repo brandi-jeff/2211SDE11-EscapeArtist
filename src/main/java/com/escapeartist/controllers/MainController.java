@@ -1,6 +1,7 @@
 package com.escapeartist.controllers;
 
 import com.escapeartist.models.*;
+import com.escapeartist.util.GameMusic;
 import com.escapeartist.util.GsonDeserializer;
 import com.escapeartist.views.MainView;
 import com.google.gson.Gson;
@@ -10,10 +11,12 @@ public class MainController {
     // Hold an instance of MainView
     private MainView mainView;
     private GameController gameController;
+    private GameMusic gameMusic;
 
     // Constructor initializes the MainView instance
     public MainController() {
         mainView = new MainView();
+        gameMusic = new GameMusic();
 
         // Deserialize game data
         GsonDeserializer deserializer = new GsonDeserializer();

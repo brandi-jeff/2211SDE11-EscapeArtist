@@ -19,7 +19,7 @@
       "explanation": "\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\nSamari Exhibits [Path of Mini-Games]:\n\nThis path challenges you to beat the computer at its own game. It may\ninvolve elements of skill, strategy, luck, or a combination of all three.\nThis path includes the following exhibits:\n  Easy: {easy}\n  Medium: {medium}\n  Hard: {hard}.\nThere are no hints in these exhibits.\nEach time you head north, you will enter a new difficulty level.\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++",
       "easy": "Koto Exhibit",
       "medium": "Shinto Exhibit",
-      "hard": "Gender Exhibit",
+      "hard": "Gendia Exhibit",
       "boss": "Modern Japan"
     },
     "items": {

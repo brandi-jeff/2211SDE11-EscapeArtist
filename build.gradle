@@ -29,6 +29,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
 
     testImplementation "org.junit.jupiter:junit-jupiter:${project.junit5Version}"
+    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'org.testng:testng:7.1.0'
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:${project.junit5Version}"
     // To use JUnit4 instead of JUnit5, comment out the previous 2 lines and uncomment the following 2 lines.
     // testImplementation "junit:junit:${project.junit4Version}"

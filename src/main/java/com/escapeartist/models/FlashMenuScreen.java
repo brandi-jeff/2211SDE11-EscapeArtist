@@ -1,16 +1,24 @@
 package com.escapeartist.models;
 
 import com.escapeartist.controllers.MainController;
+import com.escapeartist.util.Clear;
+import com.escapeartist.util.GameMusic;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class FlashMenuScreen {
-  public FlashMenuScreen(MainController game) throws IOException{
+
+  private GameMusic gameMusic;
+
+  public FlashMenuScreen(MainController game, GameMusic gameMusic) throws IOException{
+    this.gameMusic = gameMusic;
     startGame(game);
   }
 
   public void startGame(MainController game) throws IOException {
+//    new Thread (()->gameMusic.playMusic()).start();
+    gameMusic.playMusic();
     readAsciiFile();
     String message = "Press any key to continue...";
     int length = message.length() + 4;
@@ -20,7 +28,7 @@ public class FlashMenuScreen {
     System.out.println("| " + message + " |");
     System.out.println(border);
     System.in.read(); // Wait for user to press any key
-    clearConsole();
+    Clear.clearConsole();
     game.startMenu();
   }
 
@@ -38,18 +46,4 @@ public class FlashMenuScreen {
     }
   }
 
-  public static void clearConsole() {
-    try {
-      String os = System.getProperty("os.name");
-
-      if (os.contains("Windows")) {
-        new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-      } else {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
-      }
-    } catch (IOException | InterruptedException e) {
-      e.printStackTrace();
-    }
-  }
 }

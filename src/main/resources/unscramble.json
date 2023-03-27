@@ -1,0 +1,19 @@
+{
+  "name" : "Unscramble",
+  "scrambled" : "Scrambled word: ",
+  "answer" : "Please enter your guess:\n> ",
+  "no_answer" : "You did not enter a guess.",
+  "try_again" :"Incorrect.",
+  "win" : "You have correctly unscrambled the word. Congratulations.",
+  "lose" :"You did not unscramble the word.\nWould you like to try again? (Y/n)\n>",
+  "give_up" : "Thanks for trying.",
+  "no_play_again" : "Come back to play again sometime.",
+  "words" : [
+    "mammoth",
+    "pencil",
+    "mystery",
+    "silent",
+    "throw",
+    "garden"
+  ]
+}

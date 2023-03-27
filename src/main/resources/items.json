@@ -55,6 +55,13 @@
       "description": "Armor made of small pieces of lacquered metal that were connected with silk laces and cords",
       "type": "armor",
       "equippable": true
+    },
+    {
+      "id": 8,
+      "name": "Map",
+      "description" : "A visitors map...could come in handy.",
+      "type" : "item",
+      "equippable": false
     }
   ]
 }

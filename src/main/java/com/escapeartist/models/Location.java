@@ -24,8 +24,17 @@ public class Location {
     @SerializedName("npcs")
     private List<NPC> npcs;
 
+    public void removeNPC(String npcName) {
+        npcs.removeIf(npc -> npc.getName().equalsIgnoreCase(npcName));
+    }
+
+
     public void addItemToLocation(Item item) {
         items.add(item);
+    }
+
+    public void removeItem(Item item){
+        items.remove(item);
     }
 
     public int getId() {
@@ -52,7 +61,5 @@ public class Location {
         return npcs;
     }
 
-    public void removeItem(Item item){
-        items.remove(item);
-    }
+
 }

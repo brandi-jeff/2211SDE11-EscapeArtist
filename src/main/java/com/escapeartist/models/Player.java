@@ -20,6 +20,9 @@ public class Player {
     @SerializedName("inventory")
     private List<Item> inventory;
 
+    @SerializedName("name")
+    private String name;
+
     @SerializedName("currentLocation")
     private int currentLocation;
 
@@ -110,6 +113,10 @@ public class Player {
 
     public void setEquippedWeapon(Item equippedWeapon) {
         this.equippedWeapon = equippedWeapon;
+    }
+
+    public String getName() {
+        return name;
     }
 }
 

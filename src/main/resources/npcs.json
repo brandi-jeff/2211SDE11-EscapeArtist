@@ -4,7 +4,10 @@
       "interactive" : true,
       "name" : "Ghost",
       "description" : "A tired ghost of a a lost explorer; will this be your fate?",
-      "reply" : "I once was an explorer, looking for treasures unknown,\nWho got lost in this maze, my fate all my own.\nTrapped in this labyrinth, now a ghostly guide\nA puzzling place where time coincides\nNow I guard these secrets with my soul,\nAnd won't let you pass without a toll.\nSolve the riddle and pass you shall,\nBut should you fail, your journey ends here, with no avail."
+      "reply" : "I once was an explorer, looking for treasures unknown,\nWho got lost in this maze, my fate all my own.\nTrapped in this labyrinth, now a ghostly guide\nA puzzling place where time coincides\nNow I guard these secrets with my soul,\nAnd won't let you pass without a toll.\nSolve the riddle and pass you shall,\nBut should you fail, your journey ends here, with no avail.",
+      "game_invitation": "Would you like to play a game? (Yes or No)",
+      "goodbye_message": "Goodbye!",
+      "goodbye_message_2": "Thanks for playing!\nI bid you farewell and wish you best on your journey.\nThe ghost will be gone forever."
     },
     {
       "interactive" : true,
@@ -15,14 +18,20 @@
     {
      "interactive" : true,
       "name" : "Knight",
+      "solved" : false,
       "description" : "A noble Knight whose weapon has fell many an enemy.",
-      "reply" : "Greetings, adventurer, with a heart full of might,\nMy blade has vanquished foes both evil and blight."
+      "reply" : "Greetings, adventurer, with a heart full of might,\nMy blade has vanquished foes both evil and blight.",
+      "game_invitation": "Would you like to test your knowledge in a game of trivia?\nIf you answer my questions correctly, I'll reward you with a valuable item.\nWhat do you say, are you up for the challenge (yes or no)?",
+      "goodbye_message": "I see, you have other important matters to attend to. Well, I wish you\nthe best of luck on your travels, adventurer. May the road ahead be kind to you."
     },
     {
       "interactive" : true,
       "name" : "Samurai",
       "description" : "A skilled warrior who lives by a code of honor that is known as bushido.",
-      "reply" : "Greetings, adventurer, with respect to unfold,\nI am bound by bushido, a code so bold."
+      "reply" :"Here in this space you find a sight.\nAll askew, a topsy-turvy blight.\nThe ceiling holds the door, the floor the window pane.\nPictures are reversed, and nothing's quite the same.\nTo restore order, unscramble the word.\nFive guesses are that will be heard.",
+      "game_invitation": "Would you like to play? (Yes or No)\n>",
+      "goodbye_message": "Goodbye!",
+      "goodbye_message_2": "Thanks for playing!\nHere is a key.\nI bid you farewell and wish you best on your journey.\nThe ghost will be gone forever."
     },
     {
       "interactive" : true,
