@@ -35,4 +35,4 @@ Some things I would come back to finish when I can:
 - Add hints and enhanced rewards
 
 ## Thank You!!
-Thanks for taking the time to read this and review my code. I hope to circle back to this and update this readme with changes. For now, the jar file to check the game out are in the releases. 
+Thanks for taking the time to read this and review my code. I hope to circle back to this and update this readme with changes. For now, the jar files to check the game out are in the tags area. 
